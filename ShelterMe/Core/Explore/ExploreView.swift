@@ -28,6 +28,7 @@ struct ExploreView: View {
                     }
                 }.navigationDestination(for: Int.self, destination: { 
                     listing in ListitngDetailView()
+                        .navigationBarBackButtonHidden()
                 }).scrollIndicators(.hidden)
             }.padding(.horizontal, 20)
         }
